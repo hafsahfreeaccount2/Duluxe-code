@@ -149,7 +149,6 @@ body {
 }
 .main{
     display: flex;
-
     width: 96vw;
     height: 55vh;
     padding: 20px;
@@ -160,4 +159,31 @@ body {
     overflow:hidden;
     position: relative;
 
+}
+.menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+    position: relative;
+   
+
+}
+.menu-item p:last-of-type{ /* style for food*/
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+
+    
+}
+.food-labels{
+   
+    width:40%;
+    align-items:flex-end 0px;
+    
+  
+}
+.menu-image{
+    width: 100%;
 }

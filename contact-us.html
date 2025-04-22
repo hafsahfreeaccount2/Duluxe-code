@@ -26,23 +26,26 @@
         
     </div>
     </header>
-    <h1>Menu</h1>
-    <menu class = "main">
-        <h2>Popular choices</h2>
-    </menu>
-   
-    <script>
-        document.addEventListener("DOMContentLoaded",() => {
-            const links = document.querySelectorAll(".nav-buttons");
-            const currentPage = window.location.pathname.split("/").pop();
-
-            links.forEach(link => {
-                const linkPage = link.getAttribute("href");
-                if (linkPage === currentPage) {
-                    link.classList.add("active");
-                }
-            });
-        });
-    </script>
+    <h1>Contact Us</h1>
+    <div class = "main">
+        <h2>Get in Touch</h2>
+        <p>If you have any questions, feedback, or just want to say hi, feel free to reach out to us!</p>
+        <h2>Email</h2>
+        <p>
 </body>
+
+<script>
+    document.addEventListener("DOMContentLoaded",() => {
+        const links = document.querySelectorAll(".nav-buttons");
+        const currentPage = window.location.pathname.split("/").pop();
+
+        links.forEach(link => {
+            const linkPage = link.getAttribute("href");
+            if (linkPage === currentPage) {
+                link.classList.add("active");
+            }
+        });
+    });
+</script>
 </html>
+    

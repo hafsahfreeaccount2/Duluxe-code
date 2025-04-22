@@ -16,7 +16,7 @@ justify-content: space-between;
 align-items: center;
 padding: 10px 40px;
 background-color: #ffd7c4;
-border: 2px solid #fd8f66;
+
 border-radius: 20px;
 }
 .logo{
@@ -51,7 +51,7 @@ border-radius: 20px;
 
 .login-button{}
 
-.main{
+.homepage-main{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -129,7 +129,7 @@ body {
 
 
 
-.search-box input {
+.homepage-search-box input {
     padding: 10px 20px;
     border-radius: 0px 20px 20px 0px;
     border: 1px solid #ccc;
@@ -138,7 +138,7 @@ body {
     cursor: pointer;
     align-content: right;
 }
-.search-box button{
+.homepage-search-box button{
     padding: 10px 20px;
     border-radius: 0 20px 20px 0;
     border: none;
@@ -147,4 +147,17 @@ body {
     cursor: pointer;
 
 }
-.main-images{}
+.main{
+    display: flex;
+
+    width: 96vw;
+    height: 55vh;
+    padding: 20px;
+    background-color: #dae6ff;
+    border-radius: 20px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    overflow:hidden;
+    position: relative;
+
+}

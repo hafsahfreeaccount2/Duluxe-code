@@ -1,0 +1,150 @@
+
+.top-bar {
+    padding: 10px;
+    background-color: #FF9874;
+    text-align:left;
+    font-size: 14px;
+    border-radius: 10px;
+    margin-inline: 20px;
+}
+.cart{
+    text-align: right;
+}
+.nav-bar{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 40px;
+background-color: #ffd7c4;
+border: 2px solid #fd8f66;
+border-radius: 20px;
+}
+.logo{
+    font-weight: bold;
+    color:#fd8f66;
+    font-size: 20px;
+    background-color: antiquewhite;
+    margin: 0px;
+}
+.nav-links{
+    background-color: #ffd7c4;
+}
+.nav-buttons{
+    display: inline-block;
+    background-color:#ffd7c4;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+.nav-buttons:hover {
+    background-color: #9dbdff;
+}
+.nav-buttons.active {
+    background-color: #7a9eff;
+    color: white;
+}
+
+.login-button{}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 96vw;
+    height: 65vh;
+    padding: 40px;
+    background-color: #dae6ff;
+    border-radius: 20px;
+    margin: 40px auto;
+    box-sizing: border-box;
+    overflow:hidden;
+    position: relative;
+}
+
+
+.main-left{
+    flex: 1 1 500px;
+    width: 50%;
+    z-index: 2;
+}
+.main-left h1{
+    font-size: 40px;
+    color: #4a4a4a;
+    margin-bottom: 15px;
+}
+.main-right{
+    flex: 1 1 500px;
+    min-width: 300px;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.donut-top{
+    position: absolute;
+    width:35%;
+    top: 3%;
+    right: 18%;
+    
+    z-index: 3;
+   
+}
+.donut-bottom{
+    width: 22%;
+    position: absolute;
+    bottom:3%;
+    left: 30%;;
+    z-index:1;
+    
+}
+.blue-shape{
+    position: absolute;
+    bottom: 0;
+    right:0;
+    width:30%;
+    height: 100%;
+    background-color: #9dbdff;
+    border-top-left-radius: 90%;
+    z-index: 0;
+    
+
+}
+
+body {
+    background-color: #ffd7c4;
+    font-family: poppins, sans-serif;
+  
+}
+
+
+       
+
+
+
+.search-box input {
+    padding: 10px 20px;
+    border-radius: 0px 20px 20px 0px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: white;
+    cursor: pointer;
+    align-content: right;
+}
+.search-box button{
+    padding: 10px 20px;
+    border-radius: 0 20px 20px 0;
+    border: none;
+    background-color: #9dbdff ;
+    color:white;
+    cursor: pointer;
+
+}
+.main-images{}

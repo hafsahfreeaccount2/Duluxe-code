@@ -1,10 +1,73 @@
-checkout.html
 <!DOCTYPE html>
 <html>
     <head>
-
-
+        <link rel ="stylesheet" href="style.css">
+        <title>Tres Delish Donuts</title>
+        
     </head>
+    
+    <body>
+        <div class = "top-bar">
+            Get 5% Off your first order!      Use code: ORDER5 at checkout.
+            <a href ="checkout.html" class = "cart">
+              <img src ="cart.png" alt = "cart" />
+              <span>Checkout</span>
+            </a>   
+        </div>
+    
+        <br>
+    
+        <header class = "nav-bar">
+            <div class = "logo">Tres Delish Donuts</div>
+            <div class = "nav-links">
+                <a href="homepage.html" class = "nav-buttons">Home</a>
+                <a href="menu.html" class = "nav-buttons">Browse Menu </a>
+                <a href="contact-us.html" class = "nav-buttons">Contact us</a>
+                <a href="about-us.html" class = "nav-buttons">About us</a>
+            </div>
+    
+            <div class = "nav-buttons">
+                <button class = "login-button">Login</button>
+             </div>
+        </header>
+        <div class ="main">
+          <div class = "checkout-container", class = "main">
+          
+            <h1>Checkout</h1>
+
+            <div class = "cart-summary">
+                <h2>Cart Summary</h2>
+                <div class = "cart-item">
+                    <img src ="Mini Doughnut Ball Bites.png" alt = "Mini Donut Ball Bites" class = "checkout-image">
+                    <p>Mini doughnut bites of joy, perfect to satisfy any cravings...</p>
+                    <p>£12.50</p>
+                </div>
+                <div class = "cart-item">
+                    <img src ="Glazed doughnuts.png" alt = "Glazed doughtnuts" class = "checkout-image">
+                    <p>Sweet strawberry icing topped with colorful sprinkles.</p>
+                    <p>£2.75</p>
+                </div>
+                <div class ="total">
+                    <p>Total: £15.25</p>
+                </div>
+                <div class ="checkout-form">
+                    <h2>Order Details</h2>
+                    <form class = "checkout-form">
+                      <input type="text" placeholder = "Full Name" required>/>
+                      <input type="email" placeholder = "Email" required>/>
+                      <input type="text" placeholder = " Delivery Address" required>/>
+                      <textarea placeholder="Add delivery notes (optional)" rows = "3"></textarea>
+                      <button class ="checkout-button" type ="submit">Place Order</button>
+                    </form>
+                </div>
+
+            </div>
+      
+          </div>
+            
+        </div>
+
+    </body>
 
 
 

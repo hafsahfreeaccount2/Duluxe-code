@@ -8,7 +8,20 @@
     margin-inline: 20px;
 }
 .cart{
-    text-align: right;
+    position:absolute;
+    top:10px;
+    right:40px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:bold;
+
+}
+.cart img{
+    object-fit:contain;
+    vertical-align: middle;
+    width:40px;
+
 }
 .nav-bar{
 display: flex;
@@ -38,7 +51,7 @@ border-radius: 20px;
     margin: 5px;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 20px;
     transition: background-color 0.3s ease;
 }
 .nav-buttons:hover {
@@ -49,7 +62,14 @@ border-radius: 20px;
     color: white;
 }
 
-.login-button{}
+.login-button{
+    text-decoration:none;
+    color:#000;
+    transition: all 0.3s ease;
+    padding:10px 10px;
+    border-radius: 20px;
+    background-color: #ffd7c4;
+}
 
 .homepage-main{
     display: flex;
@@ -140,7 +160,7 @@ body {
 }
 .homepage-search-box button{
     padding: 10px 20px;
-    border-radius: 0 20px 20px 0;
+    border-radius: 20px 20px 20px 20px;
     border: none;
     background-color: #9dbdff ;
     color:white;
@@ -150,7 +170,7 @@ body {
 .main{
     display: flex;
     width: 96vw;
-    height: 55vh;
+    height: 65vh;
     padding: 20px;
     background-color: #dae6ff;
     border-radius: 20px;
@@ -158,7 +178,32 @@ body {
     box-sizing: border-box;
     overflow:hidden;
     position: relative;
+    
+}
+.menu-search-box{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
 
+}
+.menu-search-box button{
+    padding: 10px 20px;
+    border-radius: 20px 20px 20px 20px;
+    border: none;
+    background-color: #9dbdff ;
+    color:white;
+    cursor: pointer;
+    margin-right: 30px;
+}
+.menu-search-box input {
+    padding: 10px 80px;
+    border-radius: 20px 20px 20px 20px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: white;
+    cursor: pointer;
+    
 }
 .menu{
     display: grid;
@@ -186,4 +231,48 @@ body {
 }
 .menu-image{
     width: 100%;
+}
+.menu-buttons {
+    text-decoration:none;
+    color:#000;
+    transition: all 0.3s ease;
+    padding:10px 10px;
+    border-radius: 20px;
+    background-color: #ffd7c4;
+}
+.menu-buttons:hover{
+    background-color: #9dbdff;
+    color: white;
+}
+.menu-buttons.active{
+    background-color: #7a9eff;
+    color: white;
+}
+.quality-control {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    
+}
+.quality-control button{
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    background-color: #9dbdff ;
+    color:white;
+    cursor: pointer;
+}
+.quality-control button:hover{
+    background-color: #7a9eff;
+    color: white;
+}
+.quality-control span.quantity{
+    min-width: 20px;
+    text-align: center;
+    font-weight: bold;
 }

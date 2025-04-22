@@ -10,9 +10,14 @@
 <body>
     <div class = "top-bar">
         Get 5% Off your first order!      Use code: ORDER5 at checkout.
-        <div class = "cart">cart</div>    
+        <a href="checkout.html" class = "cart">
+          <img src ="cart.png" alt = "cart" >
+          <span>Checkout</span>
+        </a>   
     </div>
+
     <br>
+
     <header class = "nav-bar">
         <div class = "logo">Tres Delish Donuts</div>
         <div class = "nav-links">
@@ -21,17 +26,25 @@
             <a href="contact-us.html" class = "nav-buttons">Contact us</a>
             <a href="about-us.html" class = "nav-buttons">About us</a>
         </div>
-    <div class = "nav-buttons">
-        <button class = "login-button">Login</button>
-        
-    </div>
+
+        <div class = "nav-buttons">
+            <button class = "login-button">Login</button>
+         </div>
     </header>
-    <h1>Contact Us</h1>
+    </header>
     <div class = "main">
-        <h2>Get in Touch</h2>
-        <p>If you have any questions, feedback, or just want to say hi, feel free to reach out to us!</p>
-        <h2>Email</h2>
-        <p>
+        <h1>Contact Us</h1>
+        <p>If you have any questions, comments, or feedback, we would love to hear from you! Please fill out the form below and we will get back to you as soon as possible.</p>
+        <form class = "contact-form">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 </body>
 
 <script>

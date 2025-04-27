@@ -7,15 +7,33 @@
     border-radius: 10px;
     margin-inline: 20px;
 }
-.cart{
+
+.cart-button{
+    
+    background-color:#7398fe;
+    color: black;
+    padding: 10px;
+    border: none;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    width: 35px;
+    height:30px;
     position:absolute;
-    top:10px;
-    right:40px;
-    display:flex;
+    top:4px;
+    right:4px;
+    display:inline-block;
     align-items:center;
     gap:10px;
-    font-weight:bold;
-
+ 
+    
+    
+    
+}
+.cart-button:hover {
+    background-color: #9dbdff;
 }
 .cart img{
     object-fit:contain;
@@ -33,29 +51,33 @@ background-color: #ffd7c4;
 border-radius: 20px;
 }
 .logo{
-    font-weight: bold;
-    color:#fd8f66;
-    font-size: 20px;
-    background-color: antiquewhite;
-    margin: 0px;
+    top:80px;
+    left:30px;
+    position:absolute;
+    width: 200px;
+    display:flex;
+    align-content:flex-start;
 }
 .nav-links{
     background-color: #ffd7c4;
 }
 .nav-buttons{
     display: inline-block;
-    background-color:#ffd7c4;
+    background-color:#f8986b;
     color: black;
     padding: 10px 20px;
     border: none;
     margin: 5px;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight:bold;
     cursor: pointer;
     border-radius: 20px;
     transition: background-color 0.3s ease;
 }
 .nav-buttons:hover {
     background-color: #9dbdff;
+    color:white;
+    
 }
 .nav-buttons.active {
     background-color: #7a9eff;
@@ -68,7 +90,16 @@ border-radius: 20px;
     transition: all 0.3s ease;
     padding:10px 10px;
     border-radius: 20px;
-    background-color: #ffd7c4;
+    border:none;
+    background-color: #f8986b;
+    font-weight:bold;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    cursor:pointer;
+}
+.login-button:hover{
+    background-color: #9dbdff;
+    color:white;
 }
 
 .homepage-main{
@@ -170,7 +201,7 @@ body {
 .main{
     display: flex;
     width: 96vw;
-    height: 65vh;
+    height: auto;
     padding: 20px;
     background-color: #dae6ff;
     border-radius: 20px;
@@ -182,7 +213,7 @@ body {
 }
 .menu-search-box{
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end; /* align items to the right */
     align-items: flex-end;
     width: 100%;
 
@@ -207,20 +238,27 @@ body {
 }
 .menu{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* responsive grid layout */
     gap: 20px;
     width: 100%;
     position: relative;
    
-
 }
 .menu-item p:last-of-type{ /* style for food*/
     display:flex;
     justify-content: space-between;
     align-items: center;
     margin: 0;
+    
 
     
+}
+.menu-item p{
+    font-size: 16px;
+    color: #4a4a4a;
+    margin: 0;
+    padding: 0;
+    font-family:poppins, sans-serif;
 }
 .food-labels{
    
@@ -230,7 +268,7 @@ body {
   
 }
 .menu-image{
-    width: 100%;
+    width:80%;
 }
 .menu-buttons {
     text-decoration:none;
@@ -250,29 +288,66 @@ body {
 }
 .quality-control {
     display:flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-end;
     gap:10px;
+    bottom:200px;
     
 }
 .quality-control button{
-    padding: 5px;
-    height: 30px;
-    width: 30px;
+    padding: -2px;
+    height: 20px;
+    width: 20px;
     border-radius: 100%;
     font-weight: bold;
     font-size: 18px;
     border: none;
-    background-color: #9dbdff ;
+    background-color: #FF9874 ;
     color:white;
     cursor: pointer;
 }
 .quality-control button:hover{
-    background-color: #7a9eff;
+    background-color: #fc8053;
     color: white;
 }
 .quality-control span.quantity{
     min-width: 20px;
     text-align: center;
     font-weight: bold;
+}
+.total {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left
+}
+.checkout-button {
+    width:100%;
+    padding:10px;
+    background-color: #7398fe;
+    color:white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+    font-weight:bold;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.checkout-button:hover {
+    background-color:#9dbdff;
+    color:black;
+}
+.info-page{
+    display: flex;
+    flex-direction:column; /*children stacked vertically*/
+    align-items: left;
+    width: 96vw;
+    height: auto;
+    padding: 20px;
+    background-color: #dae6ff;
+    border-radius: 20px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    overflow:hidden;
+    position: relative;
 }

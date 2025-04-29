@@ -51,8 +51,8 @@ background-color: #ffd7c4;
 border-radius: 20px;
 }
 .logo{
-    top:80px;
-    left:30px;
+    top:11vh; 
+    left:5vw;
     position:absolute;
     width: 200px;
     display:flex;
@@ -109,7 +109,7 @@ border-radius: 20px;
     flex-wrap: wrap;
 
     width: 96vw;
-    height: 65vh;
+    height: auto;
     padding: 40px;
     background-color: #dae6ff;
     border-radius: 20px;
@@ -213,9 +213,10 @@ body {
 }
 .menu-search-box{
     display: flex;
-    justify-content: flex-end; /* align items to the right */
-    align-items: flex-end;
+    justify-content: flex-start; /* align items to the right */
+    align-items: flex-start;
     width: 100%;
+    padding: 20px;
 
 }
 .menu-search-box button{
@@ -227,6 +228,10 @@ body {
     cursor: pointer;
     margin-right: 30px;
 }
+.menu-search-box button:hover{
+    background-color: #7398fe;
+    color:white;
+}
 .menu-search-box input {
     padding: 10px 80px;
     border-radius: 20px 20px 20px 20px;
@@ -234,7 +239,7 @@ body {
     background-color: white;
     color: white;
     cursor: pointer;
-    
+    right:20px;
 }
 .menu{
     display: grid;

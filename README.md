@@ -57,7 +57,7 @@ Student discounts on weekends.
 
 ## Revised wireframes 
 
-![Menu wireframe](Revised-menu.png)
+![Menu wireframe](Revsied-menu.png)
 ![Homepage wireframe](Revised-homepage.png)
 ![Checkout wireframe](Revised-checkout.png)
 
